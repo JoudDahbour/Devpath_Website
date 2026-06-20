@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevPath — Chart Your Path Into Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">Dev<span>Path</span></a>
+      <nav class="nav__links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <p class="eyebrow">Sec. 01 — Orientation</p>
+        <h1>Chart your path into software development.</h1>
+        <p class="hero__lede">DevPath turns "learn to code" into an actual route: ordered milestones, real projects, and a clear next step — no more guessing what to study next.</p>
+        <a href="#contact" class="btn btn--primary">Start your path</a>
+      </div>
+
+      <div class="roadmap" aria-hidden="true">
+        <svg viewBox="0 0 800 160" preserveAspectRatio="xMidYMid meet">
+          <path id="roadmap-line" d="M40,120 C160,40 240,160 360,80 S560,20 760,90" />
+          <g class="roadmap__node" transform="translate(40,120)"><circle r="7"/></g>
+          <g class="roadmap__node" transform="translate(280,95)"><circle r="7"/></g>
+          <g class="roadmap__node" transform="translate(480,55)"><circle r="7"/></g>
+          <g class="roadmap__node roadmap__node--active" transform="translate(760,90)"><circle r="9"/></g>
+        </svg>
+        <ul class="roadmap__labels">
+          <li>Foundations</li>
+          <li>Core skills</li>
+          <li>Build projects</li>
+          <li class="is-active">Job ready</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__header">
+        <p class="eyebrow">Sec. 02 — The map</p>
+        <h2>Three things separate DevPath from a pile of tutorials.</h2>
+      </div>
+      <div class="about__grid">
+        <article class="card">
+          <span class="card__index">01</span>
+          <h3>An actual order</h3>
+          <p>Every topic is sequenced against what it unlocks next, so you're never stuck deciding what to learn first.</p>
+        </article>
+        <article class="card">
+          <span class="card__index">02</span>
+          <h3>Projects, not exercises</h3>
+          <p>Each milestone ends in something you ship — a real artifact for a portfolio, not a checkbox.</p>
+        </article>
+        <article class="card">
+          <span class="card__index">03</span>
+          <h3>Built by students, for students</h3>
+          <p>DevPath comes out of our own coursework — we built the resource we wished we'd had on day one.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__panel">
+        <p class="eyebrow">Sec. 03 — Get in touch</p>
+        <h2>Questions about a path? Send word.</h2>
+        <form class="contact__form" action="#" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Ada Lovelace" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="ada@devpath.io" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="What are you trying to learn?" required></textarea>
+
+          <button type="submit" class="btn btn--primary">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>DevPath</span>
+      <span>&copy; 2026 — built for the team project</span>
+    </div>
+  </footer>
+
 </body>
 </html>
