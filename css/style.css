@@ -261,6 +261,60 @@ button {
     cursor: pointer;
 }
 
+.contact-card {
+    border: 2px solid #3882F6;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-card form {
+    max-width: 100%;
+    gap: 0;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1F2937;
+}
+
+.contact-card input,
+.contact-card textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.contact-card button {
+    width: 100%;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
 .site-footer {
     background-color: #1F2937;
     color: #F9FAF8;

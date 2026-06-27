@@ -35,28 +35,44 @@
 
     <main>
         <section class="contact-info">
-            <h2>Send us a message</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="Your name" required>
+            <article class="contact-card">
+                <h2>Send us a message</h2>
+                <form>
+                    <section class="form-row">
+                        <article class="form-field">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </article>
+                        <article class="form-field">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="you@example.com">
+                        </article>
+                    </section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="you@example.com">
+                    <article class="form-field">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Subject of your message">
+                    </article>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                    <article class="form-field">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                    </article>
 
-                <button type="submit">Submit</button>
-            </form>
+                    <button type="submit">Send Message!</button>
+                </form>
+            </article>
         </section>
 
         <section class="contact-info">
-            <h2>Other ways to reach us:</h2>
-            <ul>
-                <li>Phone: (123) 456-7890</li>
-                <li>Email: None@example.com</li>
-                <li>Address: 123 Main Street, City, State 12345</li>
-            </ul>
+            <article class="contact-card">
+                <h2>Other ways to reach us:</h2>
+                <ul>
+                    <li>Phone: (123) 456-7890</li>
+                    <li>Email: hello@devpath.com</li>
+                    <li>Address: 123 Main Street, City, State 12345</li>
+                </ul>
+            </article>
         </section>
     </main>
 
